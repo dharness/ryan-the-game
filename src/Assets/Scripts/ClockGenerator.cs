@@ -16,7 +16,7 @@ public class ClockGenerator : MonoBehaviour {
 	}
 
 	private IEnumerator LoadScores() {
-		WWW myWww = new WWW("https://field-botany.hyperdev.space/api/scores");
+		WWW myWww = new WWW("https://field-botany.glitch.me/api/scores");
 		yield return myWww;
 		ScoreItemList scoreItems = ScoreItemList.CreateFromJSON(myWww.text);
 		this.scoreItemList = scoreItems;
